@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Application</title>
+    <link type="text/CSS" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit(event)">
+                    <div>
+                        <label for="productcode">Product Code</label>
+                        <input type="text" name="productcode" id="productcode">     
+                    </div>
+                    <div>
+                        <label for="product">Product</label>
+                        <input type="text" name="product" id="product">     
+                    </div>
+                    <div>
+                        <label for="qty">Quantity</label>
+                        <input type="text" name="qty" id="qty">     
+                    </div>
+                    <div>
+                        <label for="perprice">Price</label>
+                        <input type="text" name="perprice" id="perprice">     
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit"> 
+                        <input type="reset" value="Reset">    
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="storelist">
+                    <thead>
+                        <tr>
+                            <th>Product Code</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
